@@ -1,0 +1,111 @@
+:root {
+  --primary-color: #5fbaa7;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-color: #f4f4f4;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+}
+
+h1 {
+  color: var(--primary-color);
+}
+
+p {
+  text-align: center;
+}
+
+.btn {
+  color: #fff;
+  background-color: var(--primary-color);
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 5px 12px;
+  font-size: 12px;
+}
+
+.money-img {
+  width: 150px;
+}
+
+.currency {
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 0;
+  display: flex;
+}
+
+.currency select {
+  appearance: none;
+  background: none;
+  border: 1px solid #dedede;
+  padding: 10px 20px 10px 10px;
+  font-size: 16px;
+}
+
+.currency input {
+  text-align: right;
+  background: none;
+  border: 0;
+  font-size: 30px;
+}
+
+.swap-rate-container {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+
+.rate {
+  color: var(--primary-color);
+  padding: 0 10 px;
+  font-size: 14px;
+}
+
+select:focus, input:focus, button:focus {
+  outline: 0;
+}
+
+#loading {
+  width: 2rem;
+  height: 2rem;
+  visibility: hidden;
+  border: 5px solid #f3f3f3;
+  border-top: 6px solid #9c41f2;
+  border-radius: 100%;
+  margin: auto;
+  animation: 1s linear infinite spin;
+}
+
+#loading.display {
+  visibility: visible;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 600px) {
+  .currency input {
+    width: 200px;
+  }
+}
+
+/*# sourceMappingURL=index.2cdaf7bc.css.map */

@@ -1,0 +1,15 @@
+{
+  "name": "pec1_ej2_2",
+  "version": "1.0.0",
+  "description": "Ejercicio 1_2",
+  "default": "src/index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "parcel src/index.html --open"
+  },
+  "author": "Alberto Marín",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.8.3"
+  }
+}
